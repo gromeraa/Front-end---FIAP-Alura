@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+    <form action="script" name="matricula" id="matricula" method="get">
+        <h2>Dados Pessoais</h2>
+        <fieldset>
+            <div class="campo">
+                <label for="name">Usuário:</label>
+                <input type="text" name="name" id="name" placeholder="fulano da silva" required />
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="campo">
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" />
+            </div>
+
+            <div class="campo">
+                <label for="date">Data de nascimento:</label>
+                <input type="date" name="date" id="date" />
+            </div>
+
+            <div class="campo">
+                <label for="date-time">Data e Hora:</label>
+                <input type="datetime-local" name="date-time" id="date-time" />
+            </div>
+
+            <div class="campo">
+                <label for="time">Horário da reunião:</label>
+                <input type="time" name="time" id="time" />
+            </div>
+
+            <div class="campo">
+                <label for="month-select">Mês:</label>
+                <select name="month" id="month-select" required>
+                    <option value="01">Janeiro</option>
+                    <option value="02">Fevereiro</option>
+                    <option value="03">Março</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Maio</option>
+                    <option value="06">Junho</option>
+                    <option value="07">Julho</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <label for="year-select">Ano:</label>
+                <select name="year" id="year-select" required>
+                    <option value="">Ano</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="week-year">Semana do NEXT</label>
+                <select name="week-year" id="week-year">
+                    <option value="">Ano</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+                <label for="week-number" class="visually-hidden">Número da semana</label>
+                <select name="week-number" id="week-number">
+                    <option value="">Semana</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+                    <option value="51">51</option>
+                    <option value="52">52</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="number">Número favorito:</label>
+                <input type="number" name="number" id="number" required />
+            </div>
+
+            <div class="campo">
+                <label for="range">O quanto eu gosto de front-end:</label>
+                <input type="range" name="range" id="range" max="50" step="10" />
+            </div>
+
+            <div class="campo">
+                <label for="color">Minha cor favorita:</label>
+                <input type="color" name="color" id="color" />
+            </div>
+
+            <div class="campo">
+                <label for="archive">Mande seu arquivo:</label>
+                <input type="file" name="archive" id="archive">
+            </div>
+
+            <div class="campo">
+                <label for="jogo-favorito">Jogo favorito:</label>
+                <select name="jogos" id="jogo-favorito">
+                    <option value="">Escolha seu jogo favorito</option>
+                    <option value="1">Skyrim</option>
+                    <option value="2">Need For Speed</option>
+                    <option value="3">Forza</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="list-cod">Escolha o seu C.O.D favorito:</label>
+                <input list="cod-lista" name="cod-lista" id="list-cod" placeholder="Escolha o seu C.O.D favorito">
+                <datalist id="cod-lista">
+                    <option value="Call Of Duty 2">
+                    <option value="Call Of Duty Modern Warfare 2">
+                    <option value="Call Of Duty Modern Warfare 3">
+                    <option value="Call Of Duty Black Ops">
+                    <option value="Call Of Duty Black Ops 2">
+                    <option value="Call Of Duty Warzone">
+                </datalist>
+            </div>
+
+            <div class="campo">
+                <h3>Deixe sua mensagem:</h3>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem aqui" title="Digite sua mensagem"></textarea>
+            </div>
+        </fieldset>
+
+        <h2>Escolha seu jogo favorito:</h2>
+        <fieldset>
+            <div class="radio-buttons">
+                <div>
+                    <input type="radio" name="jogo" id="jogo1" />
+                    <label for="jogo1">Doom</label>
+                </div>
+                <div>
+                    <input type="radio" name="jogo" id="jogo2" />
+                    <label for="jogo2">Stardew Valley</label>
+                </div>
+                <div>
+                    <input type="radio" name="jogo" id="jogo3" />
+                    <label for="jogo3">Celeste</label>
+                </div>
+                <div>
+                    <input type="radio" name="jogo" id="jogo4" />
+                    <label for="jogo4">Silent Hill</label>
+                </div>
+                <div>
+                    <input type="radio" name="jogo" id="jogo5" />
+                    <label for="jogo5">CS Go</label>
+                </div>
+                <div>
+                    <input type="radio" name="jogo" id="jogo6" />
+                    <label for="jogo6">Ragnarok</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <h2>Escolha todos os jogos que você gosta:</h2>
+        <fieldset>
+            <div>
+                <input type="checkbox" name="jogo" id="jogo1" />
+                <label for="jogo1">Doom</label>
+            </div>
+            <div>
+                <input type="checkbox" name="jogo" id="jogo2" />
+                <label for="jogo2">Star Wars</label>
+            </div>
+            <div>
+                <input type="checkbox" name="jogo" id="jogo3" />
+                <label for="jogo3">Fortnite</label>
+            </div>
+            <div>
+                <input type="checkbox" name="jogo" id="jogo4" />
+                <label for="jogo4">Silent Hill</label>
+            </div>
+            <div>
+                <input type="checkbox" name="jogo" id="jogo5" />
+                <label for="jogo5">CS Go</label>
+            </div>
+            <div>
+                <input type="checkbox" name="jogo" id="jogo6" />
+                <label for="jogo6">Ragnarok</label>
+            </div>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar" id="enviar">
+        <input type="reset" value="Limpar" id="limpar">
+    </form>
+</body>
+
+</html>
