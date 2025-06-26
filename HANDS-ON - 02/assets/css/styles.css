@@ -1,0 +1,27 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+ul {
+    list-style: url(../images/317755_badge_html_html5_achievement_award_icon.png);
+}
+
+img {
+    width: 50%;
+    border-radius: 5%;
+}
